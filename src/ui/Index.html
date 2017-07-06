@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator Demo</title>
+    <script type="text/javascript" src="~/Scripts/jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+        Display = function (displayObject) {
+            var me = this;
+            this.display = displayObject;
+            me.Clear = function () {
+                $(display).empty();
+            };
+
+            me.Reset();
+        };
+
+        Display.prototype.Reset = function () {
+            var me = this;
+            me.DecimalMode = false;
+            me.Clear();
+        };
+
+        Display.prototype.Append = function (value) {
+            var me = this;
+            $(me.display).text($(me.display).text() + value);
+        };
+
+        Display.prototype.Replace = function (value) {
+            var me = this;
+            me.Clear();
+            me.Append(value);
+        };
+
+    </script>
+    <script type="text/javascript">
+        Calculator = function (calculatorObject) {
+            var me = this;
+            var displayObject = $(calculatorObject).find('#display').first();
+            me.leftOperand = undefined;
+            me.rightOperand = undefined;
+            me.display = new Display(displayObject);
+            var InitializeCalculator = function () {
+                $.each($(calculatorObject).find('.button'), function (index, value) {
+                    var button = $(value);
+
+                    button.click(function () {
+                        me.ProcessButtonPush(this);
+                    });
+
+                    if (button.hasClass('numberButton'))
+                        button.mousedown(function () {
+                            $(this).addClass('numberButton-Pressed');
+                        }).mouseup(function () {
+                            $(this).removeClass('numberButton-Pressed');
+                        });
+
+                    if (button.hasClass('operatorButton'))
+                        button.mousedown(function () {
+                            $(this).addClass('operatorButton-Pressed');
+                        }).mouseup(function () {
+                            $(this).removeClass('operatorButton-Pressed');
+                        });
+                });
+            };
+            var InitializeKeypresses = function() {
+                $(document).keydown(function (event) {
+                    var charCode = event.keyCode;
+                    var id = TranslateCharacterCodeToId(charCode);
+                    if (id != undefined) {
+                        var button = $('#' + id);
+                        if (button.hasClass('numberButton'))
+                            button.addClass('numberButton-Pressed');
+                        if (button.hasClass('operatorButton'))
+                            button.addClass('operatorButton-Pressed');
+
+                        me.ProcessButtonPush(button);
+                    }
+                }).keyup(function (event) {
+                    var charCode = event.keyCode;
+                    var id = TranslateCharacterCodeToId(charCode);
+                    if (id != undefined) {
+                        var button = $('#' + id);
+                        if (button.hasClass('numberButton'))
+                            button.removeClass('numberButton-Pressed');
+                        if (button.hasClass('operatorButton'))
+                            button.removeClass('operatorButton-Pressed');
+
+                    }
+                });
+            };
+
+            var TranslateCharacterCodeToId = function(charCode) {
+                switch (charCode) {
+                case 13:
+                case 187:
+                    return 'equals';
+                case 48:
+                case 96:
+                    return '1'; //Change back to zero 
+                case 49:
+                case 97:
+                    return '1';
+                case 50:
+                case 98:
+                    return '2';
+                case 51:
+                case 99:
+                    return '3';
+                case 52:
+                case 100:
+                    return '4';
+                case 53:
+                case 101:
+                    return '5';
+                case 54:
+                case 102:
+                    return '6';
+                case 55:
+                case 103:
+                    return '7';
+                case 56:
+                case 104:
+                    return '8';
+                case 57:
+                case 105:
+                    return '9';
+                case 106:
+                    return 'multiply';
+                case 107:
+                    return 'plus';
+                case 109:
+                    return '-';
+                case 110:
+                    return '.';
+                case 111:
+                    return 'divide';
+                default:
+                    return 'default';
+                }
+            };
+            InitializeCalculator(calculatorObject);
+            InitializeKeypresses();
+        };
+
+        Calculator.prototype.ProcessButtonPush = function (pressedButton) {
+            var me = this;
+            var button = $(pressedButton);
+            if (button.attr('id') === 'decimal') {
+                me.ProcessDecimal();
+                return;
+            }
+
+            if (button.attr('id') === 'clear') {
+                me.leftOperand = undefined;
+                me.rightOperand = undefined;
+                me.operator = undefined;
+                me.result = undefined;
+                me.display.Clear();
+                return;
+            }
+
+            if (button.attr('id') === 'equals') {
+                if (me.leftOperand != undefined && me.leftOperand != undefined && me.operator != undefined)
+                    me.Solve();
+                return;
+            }
+
+            if (button.attr('id') === 'multiply') {
+                me.ProcessMultiply();
+                return;
+            }
+            
+            if (button.attr('id') === 'divide') {
+                me.ProcessDivide();
+                return;
+            }
+            
+            if (button.attr('id') === 'plus') {
+                me.ProcessPlus();
+                return;
+            }
+
+            if (button.hasClass('numberButton')) {
+                me.ProcessNumber(button);
+                return;
+            }
+
+            if (button.hasClass('operatorButton')) {
+                me.ProcessOperator(button);
+            }
+        };
+
+        Calculator.prototype.ProcessDecimal = function () {
+            var me = this;
+            if (!me.DecimalMode) {
+                me.DecimalMode = true;
+                if (me.operator == undefined) {
+                    if (me.leftOperand == undefined)
+                        me.leftOperand = '';
+                    me.leftOperand = me.leftOperand + '.';
+                    me.display.Replace(me.leftOperand);
+                } else {
+                    if (me.rightOperand == undefined)
+                        me.rightOperand = '';
+                    me.rightOperand = me.rightOperand + '.';
+                    me.display.Replace(me.rightOperand);
+                }
+            }
+
+        };
+
+        Calculator.prototype.ProcessNumber = function (button) {
+            var me = this;
+            var value = button.attr('id');
+            if (me.operator == undefined) {
+                if (me.leftOperand == undefined)
+                    me.leftOperand = '';
+                me.leftOperand = me.leftOperand + value;
+                me.display.Replace(me.leftOperand);
+            } else {
+                if (me.rightOperand == undefined)
+                    me.rightOperand = '';
+                me.rightOperand = me.rightOperand + value;
+                me.display.Replace(me.rightOperand);
+            }
+        };
+
+        Calculator.prototype.ProcessOperator = function (button) {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = button.attr('id');
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+
+        Calculator.prototype.ProcessDivide = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '/';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+        
+        Calculator.prototype.ProcessMultiply = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '*';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+        
+        Calculator.prototype.ProcessPlus = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '+';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+
+        Calculator.prototype.Solve = function () {
+            var me = this;
+            var equation = me.leftOperand + ' ' + me.operator + ' ' + me.rightOperand;
+            me.result = eval(equation);
+            me.display.Replace(me.result);
+            me.leftOperand = me.result;
+            me.rightOperand = undefined;
+            me.operator = undefined;
+        };
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            var calculator = new Calculator(document.getElementById('calculator'));
+        });
+
+    </script>
+    <style type="text/css">
+        body {
+            background-color: #30455E;
+        }
+
+        #calculator {
+            height: 362px;
+            width: 700px;
+            background-color: black;
+            padding: 0px 25px 25px 25px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -181px;
+            margin-left: -350px;
+            border: 1px solid white;
+        }
+
+        #display {
+            width: 650px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 25px 0px 25px 0px;
+            background-color: white;
+            font-family: monospace;
+            font-size: 50px;
+            text-align: right;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+            .button .buttonLabel {
+                background-color: transparent;
+                text-align: center;
+                padding-top: 15px;
+            }
+
+        .buttonRow {
+            width: 208px;
+            height: 52px;
+            clear: both;
+        }
+
+        .numberButton {
+            background-color: #0a50a0;
+            color: white;
+        }
+
+        .numberButton-Pressed {
+            background-color: white;
+            color: #0a50a0;
+        }
+
+        .operatorButton {
+            background-color: darkgray;
+            color: black;
+        }
+
+        .operatorButton-Pressed {
+            background-color: black;
+            color: darkgray;
+        }
+
+        .buttonRow .button {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="calculator">
+            <div id="top">
+                <div id="display">
+                    <div id="digits" />
+                </div>
+            </div>
+            <div id="center">
+                <div id="buttons">
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="blank1">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button numberButton" id="blank2">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button numberButton" id="blank3">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button operatorButton" id="clear">
+                            <div class="buttonLabel">C</div>
+                        </div>
+                    </div>
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="7">
+                            <div class="buttonLabel">7</div>
+                        </div>
+                        <div class="button numberButton" id="8">
+                            <div class="buttonLabel">8</div>
+                        </div>
+                        <div class="button numberButton" id="9">
+                            <div class="buttonLabel">9</div>
+                        </div>
+                        <div class="button operatorButton" id="plus">
+                            <div class="buttonLabel">+</div>
+                        </div>
+                    </div>
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="4">
+                            <div class="buttonLabel">4</div>
+                        </div>
+                        <div class="button numberButton" id="5">
+                            <div class="buttonLabel">5</div>
+                        </div>
+                        <div class="button numberButton" id="6">
+                            <div class="buttonLabel">6</div>
+                        </div>
+                        <div class="button operatorButton" id="-">
+                            <div class="buttonLabel">-</div>
+                        </div>
+                    </div>
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="1">
+                            <div class="buttonLabel">1</div>
+                        </div>
+                        <div class="button numberButton" id="2">
+                            <div class="buttonLabel">2</div>
+                        </div>
+                        <div class="button numberButton" id="3">
+                            <div class="buttonLabel">3</div>
+                        </div>
+                        <div class="button operatorButton" id="multiply">
+                            <div class="buttonLabel">*</div>
+                        </div>
+                    </div>
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="0">
+                            <div class="buttonLabel">0</div>
+                        </div>
+                        <div class="button numberButton" id="decimal">
+                            <div class="buttonLabel">.</div>
+                        </div>
+                        <div class="button numberButton" id="equals">
+                            <div class="buttonLabel">=</div>
+                        </div>
+                        <div class="button operatorButton" id="divide">
+                            <div class="buttonLabel">&divide;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name:  calculator-demo
+  labels:
+    name:  calculator-demo
+spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name:  calculator-demo
+        app: calculator-demo
+    spec:
+      containers:
+      - image:  ipedrazas/docmock
+        name:  calculator-demo
+        resources:
+          requests:
+            cpu: "20m"
+            memory: "55M"
+        livenessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          initialDelaySeconds: 90
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          initialDelaySeconds: 30
+          timeoutSeconds: 10
+        env:
+        - name:  ENVVARNAME
+          value:  ENVVARVALUE       
+        ports:
+        - containerPort:  80
+          name:  calculator-demo

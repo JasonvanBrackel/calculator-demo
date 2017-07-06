@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  calculator-demo
+spec:
+  selector:
+    app:  calculator-demo
+  type:  LoadBalancer
+  ports:
+  - name:  http
+    port:  80

@@ -1,0 +1,1 @@
+choco install NuGet.CommandLine -y
