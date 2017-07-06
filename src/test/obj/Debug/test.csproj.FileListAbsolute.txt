@@ -9,3 +9,4 @@ D:\code\calculator-demo\src\test\bin\Debug\WebDriver.Support.xml
 D:\code\calculator-demo\src\test\obj\Debug\Tests.dll
 D:\code\calculator-demo\src\test\obj\Debug\Tests.pdb
 D:\code\calculator-demo\src\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+D:\code\calculator-demo\src\test\bin\Debug\Tests.dll.config

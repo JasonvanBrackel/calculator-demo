@@ -13,7 +13,7 @@ namespace Tests
         [SetUp]
         public void OpenCalculator()
         {
-            Driver.Url = $"http://{ConfigurationManager.AppSettings["host"]}/Index.html";
+            Driver.Url = $"{ConfigurationManager.AppSettings["siteHost"]}/Index.html";
         }
 
         [Test]

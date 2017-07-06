@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="75" result="Failed" total="75" passed="40" failed="35" inconclusive="0" skipped="0" asserts="30" engine-version="3.4.0.0" clr-version="4.0.30319.42000" start-time="2017-07-06 15:15:53Z" end-time="2017-07-06 15:16:35Z" duration="41.643891">
+  <command-line><![CDATA["C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe"  src\test\bin\Debug\Tests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1078" name="Tests.dll" fullname="D:\code\calculator-demo\src\test\bin\Debug\Tests.dll" runstate="Runnable" testcasecount="75" result="Failed" site="Child" start-time="2017-07-06 15:15:53Z" end-time="2017-07-06 15:16:35Z" duration="41.538998" total="75" passed="40" failed="35" warnings="0" inconclusive="0" skipped="0" asserts="30">
+    <environment framework-version="3.7.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.15063.0" platform="Win32NT" cwd="D:\code\calculator-demo" machine-name="JVB" user="jason" user-domain="JVB" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="D:\code\calculator-demo" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="32128" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1079" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="75" result="Failed" site="Child" start-time="2017-07-06 15:15:53Z" end-time="2017-07-06 15:16:35Z" duration="41.513727" total="75" passed="40" failed="35" warnings="0" inconclusive="0" skipped="0" asserts="30">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="ChromeTests" fullname="Tests.ChromeTests" classname="Tests.ChromeTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2017-07-06 15:15:53Z" end-time="2017-07-06 15:16:01Z" duration="8.013188" total="25" passed="25" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="15">
+        <test-case id="0-1022" name="Adding_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.Adding_two_numbers_should_give_a_correct_result" methodname="Adding_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="907044246" result="Passed" start-time="2017-07-06 15:15:56Z" end-time="2017-07-06 15:15:57Z" duration="0.672806" asserts="1" />
+        <test-case id="0-1010" name="Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_0_Should_Append_9_to_the_Display" methodname="Clicking_Button_0_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="826842972" result="Passed" start-time="2017-07-06 15:15:57Z" end-time="2017-07-06 15:15:57Z" duration="0.156976" asserts="1" />
+        <test-case id="0-1001" name="Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_1_Should_Append_1_to_the_Display" methodname="Clicking_Button_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="2123753708" result="Passed" start-time="2017-07-06 15:15:57Z" end-time="2017-07-06 15:15:57Z" duration="0.148356" asserts="1" />
+        <test-case id="0-1002" name="Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_2_Should_Append_2_to_the_Display" methodname="Clicking_Button_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="891652871" result="Passed" start-time="2017-07-06 15:15:57Z" end-time="2017-07-06 15:15:57Z" duration="0.163236" asserts="1" />
+        <test-case id="0-1003" name="Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_3_Should_Append_3_to_the_Display" methodname="Clicking_Button_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1985105158" result="Passed" start-time="2017-07-06 15:15:57Z" end-time="2017-07-06 15:15:57Z" duration="0.207994" asserts="1" />
+        <test-case id="0-1004" name="Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_4_Should_Append_4_to_the_Display" methodname="Clicking_Button_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="712239895" result="Passed" start-time="2017-07-06 15:15:57Z" end-time="2017-07-06 15:15:58Z" duration="0.157151" asserts="1" />
+        <test-case id="0-1005" name="Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_5_Should_Append_5_to_the_Display" methodname="Clicking_Button_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="262708" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:58Z" duration="0.209337" asserts="1" />
+        <test-case id="0-1006" name="Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_6_Should_Append_6_to_the_Display" methodname="Clicking_Button_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="86551892" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:58Z" duration="0.160548" asserts="1" />
+        <test-case id="0-1007" name="Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_7_Should_Append_7_to_the_Display" methodname="Clicking_Button_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1506262768" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:58Z" duration="0.169985" asserts="1" />
+        <test-case id="0-1008" name="Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_8_Should_Append_8_to_the_Display" methodname="Clicking_Button_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="179030534" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:58Z" duration="0.175674" asserts="1" />
+        <test-case id="0-1009" name="Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.Clicking_Button_9_Should_Append_9_to_the_Display" methodname="Clicking_Button_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="752291912" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:58Z" duration="0.189069" asserts="1" />
+        <test-case id="0-1021" name="Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.ChromeTests.Clicking_Clear_Button_Should_Clear_Display" methodname="Clicking_Clear_Button_Should_Clear_Display" classname="Tests.TestBase" runstate="Runnable" seed="773555213" result="Passed" start-time="2017-07-06 15:15:58Z" end-time="2017-07-06 15:15:59Z" duration="0.211562" asserts="1" />
+        <test-case id="0-1025" name="Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.Dividing_two_numbers_should_give_a_correct_result" methodname="Dividing_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="1827835619" result="Passed" start-time="2017-07-06 15:15:59Z" end-time="2017-07-06 15:15:59Z" duration="0.392136" asserts="1" />
+        <test-case id="0-1024" name="Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.Multiplying_two_numbers_should_give_a_correct_result" methodname="Multiplying_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="1095695145" result="Passed" start-time="2017-07-06 15:15:59Z" end-time="2017-07-06 15:15:59Z" duration="0.358679" asserts="1" />
+        <test-case id="0-1023" name="Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.Subtracting_two_numbers_should_give_a_correct_result" methodname="Subtracting_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="510741236" result="Passed" start-time="2017-07-06 15:15:59Z" end-time="2017-07-06 15:16:00Z" duration="0.403387" asserts="1" />
+        <test-case id="0-1020" name="Typing_0_Should_Append_0_to_the_Display" fullname="Tests.ChromeTests.Typing_0_Should_Append_0_to_the_Display" methodname="Typing_0_Should_Append_0_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="633543955" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:00Z" duration="0.124044" asserts="0" />
+        <test-case id="0-1011" name="Typing_1_Should_Append_1_to_the_Display" fullname="Tests.ChromeTests.Typing_1_Should_Append_1_to_the_Display" methodname="Typing_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="2106366278" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:00Z" duration="0.102114" asserts="0" />
+        <test-case id="0-1012" name="Typing_2_Should_Append_2_to_the_Display" fullname="Tests.ChromeTests.Typing_2_Should_Append_2_to_the_Display" methodname="Typing_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="468056521" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:00Z" duration="0.096784" asserts="0" />
+        <test-case id="0-1013" name="Typing_3_Should_Append_3_to_the_Display" fullname="Tests.ChromeTests.Typing_3_Should_Append_3_to_the_Display" methodname="Typing_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="7175540" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:00Z" duration="0.098918" asserts="0" />
+        <test-case id="0-1014" name="Typing_4_Should_Append_4_to_the_Display" fullname="Tests.ChromeTests.Typing_4_Should_Append_4_to_the_Display" methodname="Typing_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="859305724" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:00Z" duration="0.119780" asserts="0" />
+        <test-case id="0-1015" name="Typing_5_Should_Append_5_to_the_Display" fullname="Tests.ChromeTests.Typing_5_Should_Append_5_to_the_Display" methodname="Typing_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1872117941" result="Passed" start-time="2017-07-06 15:16:00Z" end-time="2017-07-06 15:16:01Z" duration="0.126378" asserts="0" />
+        <test-case id="0-1016" name="Typing_6_Should_Append_6_to_the_Display" fullname="Tests.ChromeTests.Typing_6_Should_Append_6_to_the_Display" methodname="Typing_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1258055763" result="Passed" start-time="2017-07-06 15:16:01Z" end-time="2017-07-06 15:16:01Z" duration="0.133273" asserts="0" />
+        <test-case id="0-1017" name="Typing_7_Should_Append_7_to_the_Display" fullname="Tests.ChromeTests.Typing_7_Should_Append_7_to_the_Display" methodname="Typing_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="25884403" result="Passed" start-time="2017-07-06 15:16:01Z" end-time="2017-07-06 15:16:01Z" duration="0.165049" asserts="0" />
+        <test-case id="0-1018" name="Typing_8_Should_Append_8_to_the_Display" fullname="Tests.ChromeTests.Typing_8_Should_Append_8_to_the_Display" methodname="Typing_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1658754194" result="Passed" start-time="2017-07-06 15:16:01Z" end-time="2017-07-06 15:16:01Z" duration="0.123432" asserts="0" />
+        <test-case id="0-1019" name="Typing_9_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.Typing_9_Should_Append_9_to_the_Display" methodname="Typing_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1869856998" result="Passed" start-time="2017-07-06 15:16:01Z" end-time="2017-07-06 15:16:01Z" duration="0.107650" asserts="0" />
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1026" name="FirefoxTests" fullname="Tests.FirefoxTests" classname="Tests.FirefoxTests" runstate="Runnable" testcasecount="25" result="Failed" site="Child" start-time="2017-07-06 15:16:01Z" end-time="2017-07-06 15:16:12Z" duration="10.680292" total="25" passed="15" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="15">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1048" name="Adding_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.Adding_two_numbers_should_give_a_correct_result" methodname="Adding_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="1591220375" result="Passed" start-time="2017-07-06 15:16:05Z" end-time="2017-07-06 15:16:05Z" duration="0.348215" asserts="1" />
+        <test-case id="0-1036" name="Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_0_Should_Append_9_to_the_Display" methodname="Clicking_Button_0_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="767221767" result="Passed" start-time="2017-07-06 15:16:05Z" end-time="2017-07-06 15:16:05Z" duration="0.148749" asserts="1" />
+        <test-case id="0-1027" name="Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_1_Should_Append_1_to_the_Display" methodname="Clicking_Button_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1305958845" result="Passed" start-time="2017-07-06 15:16:05Z" end-time="2017-07-06 15:16:06Z" duration="0.157539" asserts="1" />
+        <test-case id="0-1028" name="Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_2_Should_Append_2_to_the_Display" methodname="Clicking_Button_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1529097501" result="Passed" start-time="2017-07-06 15:16:06Z" end-time="2017-07-06 15:16:06Z" duration="0.230652" asserts="1" />
+        <test-case id="0-1029" name="Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_3_Should_Append_3_to_the_Display" methodname="Clicking_Button_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="2058957948" result="Passed" start-time="2017-07-06 15:16:06Z" end-time="2017-07-06 15:16:06Z" duration="0.165492" asserts="1" />
+        <test-case id="0-1030" name="Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_4_Should_Append_4_to_the_Display" methodname="Clicking_Button_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1663847769" result="Passed" start-time="2017-07-06 15:16:06Z" end-time="2017-07-06 15:16:06Z" duration="0.163779" asserts="1" />
+        <test-case id="0-1031" name="Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_5_Should_Append_5_to_the_Display" methodname="Clicking_Button_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="2125585980" result="Passed" start-time="2017-07-06 15:16:06Z" end-time="2017-07-06 15:16:06Z" duration="0.168644" asserts="1" />
+        <test-case id="0-1032" name="Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_6_Should_Append_6_to_the_Display" methodname="Clicking_Button_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="255360922" result="Passed" start-time="2017-07-06 15:16:06Z" end-time="2017-07-06 15:16:07Z" duration="0.179778" asserts="1" />
+        <test-case id="0-1033" name="Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_7_Should_Append_7_to_the_Display" methodname="Clicking_Button_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="856967246" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:07Z" duration="0.153580" asserts="1" />
+        <test-case id="0-1034" name="Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_8_Should_Append_8_to_the_Display" methodname="Clicking_Button_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="446245209" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:07Z" duration="0.212722" asserts="1" />
+        <test-case id="0-1035" name="Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.Clicking_Button_9_Should_Append_9_to_the_Display" methodname="Clicking_Button_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1536187280" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:07Z" duration="0.152172" asserts="1" />
+        <test-case id="0-1047" name="Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.FirefoxTests.Clicking_Clear_Button_Should_Clear_Display" methodname="Clicking_Clear_Button_Should_Clear_Display" classname="Tests.TestBase" runstate="Runnable" seed="1878258706" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:07Z" duration="0.131918" asserts="1" />
+        <test-case id="0-1051" name="Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.Dividing_two_numbers_should_give_a_correct_result" methodname="Dividing_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="102152222" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:07Z" duration="0.238500" asserts="1" />
+        <test-case id="0-1050" name="Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.Multiplying_two_numbers_should_give_a_correct_result" methodname="Multiplying_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="1559057185" result="Passed" start-time="2017-07-06 15:16:07Z" end-time="2017-07-06 15:16:08Z" duration="0.240163" asserts="1" />
+        <test-case id="0-1049" name="Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.Subtracting_two_numbers_should_give_a_correct_result" methodname="Subtracting_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="623049089" result="Passed" start-time="2017-07-06 15:16:08Z" end-time="2017-07-06 15:16:08Z" duration="0.304532" asserts="1" />
+        <test-case id="0-1046" name="Typing_0_Should_Append_0_to_the_Display" fullname="Tests.FirefoxTests.Typing_0_Should_Append_0_to_the_Display" methodname="Typing_0_Should_Append_0_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1709204637" result="Failed" label="Error" start-time="2017-07-06 15:16:08Z" end-time="2017-07-06 15:16:09Z" duration="0.513511" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_0_Should_Append_0_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 136]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1037" name="Typing_1_Should_Append_1_to_the_Display" fullname="Tests.FirefoxTests.Typing_1_Should_Append_1_to_the_Display" methodname="Typing_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="209227761" result="Failed" label="Error" start-time="2017-07-06 15:16:09Z" end-time="2017-07-06 15:16:09Z" duration="0.343631" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_1_Should_Append_1_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 82]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1038" name="Typing_2_Should_Append_2_to_the_Display" fullname="Tests.FirefoxTests.Typing_2_Should_Append_2_to_the_Display" methodname="Typing_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1766068036" result="Failed" label="Error" start-time="2017-07-06 15:16:09Z" end-time="2017-07-06 15:16:09Z" duration="0.391838" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_2_Should_Append_2_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 88]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1039" name="Typing_3_Should_Append_3_to_the_Display" fullname="Tests.FirefoxTests.Typing_3_Should_Append_3_to_the_Display" methodname="Typing_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="544434336" result="Failed" label="Error" start-time="2017-07-06 15:16:09Z" end-time="2017-07-06 15:16:10Z" duration="0.350792" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_3_Should_Append_3_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 94]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1040" name="Typing_4_Should_Append_4_to_the_Display" fullname="Tests.FirefoxTests.Typing_4_Should_Append_4_to_the_Display" methodname="Typing_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="479714314" result="Failed" label="Error" start-time="2017-07-06 15:16:10Z" end-time="2017-07-06 15:16:10Z" duration="0.368873" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_4_Should_Append_4_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 100]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1041" name="Typing_5_Should_Append_5_to_the_Display" fullname="Tests.FirefoxTests.Typing_5_Should_Append_5_to_the_Display" methodname="Typing_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="79681322" result="Failed" label="Error" start-time="2017-07-06 15:16:10Z" end-time="2017-07-06 15:16:10Z" duration="0.341944" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_5_Should_Append_5_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 106]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1042" name="Typing_6_Should_Append_6_to_the_Display" fullname="Tests.FirefoxTests.Typing_6_Should_Append_6_to_the_Display" methodname="Typing_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="435268140" result="Failed" label="Error" start-time="2017-07-06 15:16:10Z" end-time="2017-07-06 15:16:11Z" duration="0.363736" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_6_Should_Append_6_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 112]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1043" name="Typing_7_Should_Append_7_to_the_Display" fullname="Tests.FirefoxTests.Typing_7_Should_Append_7_to_the_Display" methodname="Typing_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="932476012" result="Failed" label="Error" start-time="2017-07-06 15:16:11Z" end-time="2017-07-06 15:16:11Z" duration="0.395694" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_7_Should_Append_7_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 118]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1044" name="Typing_8_Should_Append_8_to_the_Display" fullname="Tests.FirefoxTests.Typing_8_Should_Append_8_to_the_Display" methodname="Typing_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1402268507" result="Failed" label="Error" start-time="2017-07-06 15:16:11Z" end-time="2017-07-06 15:16:11Z" duration="0.384932" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_8_Should_Append_8_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 124]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1045" name="Typing_9_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.Typing_9_Should_Append_9_to_the_Display" methodname="Typing_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="361181629" result="Failed" label="Error" start-time="2017-07-06 15:16:11Z" end-time="2017-07-06 15:16:12Z" duration="0.385213" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\jason\AppData\Local\Temp\rust_mozprofile.MCpzlgiYib76, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=53.0.2, platformVersion=10.0, moz:processID=12488, browserName=firefox, platformName=windows_nt}]
+Session ID: 891ee34c-23d5-485c-9155-e625daa0a1ab
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_9_Should_Append_9_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 130]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1052" name="IETests" fullname="Tests.IETests" classname="Tests.IETests" runstate="Runnable" testcasecount="25" result="Failed" site="Child" start-time="2017-07-06 15:16:12Z" end-time="2017-07-06 15:16:35Z" duration="22.806678" total="25" passed="0" failed="25" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1074" name="Adding_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.Adding_two_numbers_should_give_a_correct_result" methodname="Adding_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="465479074" result="Failed" label="Error" start-time="2017-07-06 15:16:14Z" end-time="2017-07-06 15:16:15Z" duration="0.835523" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 307 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=3}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestMath(Double leftOperand, Double rightOperand, String operator, Double expectedResult) in D:\code\calculator-demo\src\test\TestBase.cs:line 178
+   at Tests.TestBase.Adding_two_numbers_should_give_a_correct_result() in D:\code\calculator-demo\src\test\TestBase.cs:line 155]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1062" name="Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.IETests.Clicking_Button_0_Should_Append_9_to_the_Display" methodname="Clicking_Button_0_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="812058498" result="Failed" label="Error" start-time="2017-07-06 15:16:15Z" end-time="2017-07-06 15:16:16Z" duration="0.804667" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 0 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 302 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=0}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_0_Should_Append_9_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 76]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1053" name="Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.IETests.Clicking_Button_1_Should_Append_1_to_the_Display" methodname="Clicking_Button_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="827887385" result="Failed" label="Error" start-time="2017-07-06 15:16:16Z" end-time="2017-07-06 15:16:17Z" duration="0.808824" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 1 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 300 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=1}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_1_Should_Append_1_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 22]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1054" name="Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.IETests.Clicking_Button_2_Should_Append_2_to_the_Display" methodname="Clicking_Button_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="965947193" result="Failed" label="Error" start-time="2017-07-06 15:16:17Z" end-time="2017-07-06 15:16:17Z" duration="0.837389" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 2 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 340 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=2}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_2_Should_Append_2_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 28]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1055" name="Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.IETests.Clicking_Button_3_Should_Append_3_to_the_Display" methodname="Clicking_Button_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1429895410" result="Failed" label="Error" start-time="2017-07-06 15:16:17Z" end-time="2017-07-06 15:16:18Z" duration="0.832317" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 305 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=3}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_3_Should_Append_3_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 34]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1056" name="Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.IETests.Clicking_Button_4_Should_Append_4_to_the_Display" methodname="Clicking_Button_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="212826647" result="Failed" label="Error" start-time="2017-07-06 15:16:18Z" end-time="2017-07-06 15:16:19Z" duration="0.810080" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 4 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 310 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=4}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_4_Should_Append_4_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 40]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1057" name="Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.IETests.Clicking_Button_5_Should_Append_5_to_the_Display" methodname="Clicking_Button_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="838616441" result="Failed" label="Error" start-time="2017-07-06 15:16:19Z" end-time="2017-07-06 15:16:20Z" duration="0.796165" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 5 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 295 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=5}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_5_Should_Append_5_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 46]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1058" name="Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.IETests.Clicking_Button_6_Should_Append_6_to_the_Display" methodname="Clicking_Button_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="214875121" result="Failed" label="Error" start-time="2017-07-06 15:16:20Z" end-time="2017-07-06 15:16:21Z" duration="0.844436" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 6 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 326 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=6}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_6_Should_Append_6_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 52]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1059" name="Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.IETests.Clicking_Button_7_Should_Append_7_to_the_Display" methodname="Clicking_Button_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1695110601" result="Failed" label="Error" start-time="2017-07-06 15:16:21Z" end-time="2017-07-06 15:16:22Z" duration="0.831200" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 7 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 297 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=7}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_7_Should_Append_7_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 58]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1060" name="Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.IETests.Clicking_Button_8_Should_Append_8_to_the_Display" methodname="Clicking_Button_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1274306230" result="Failed" label="Error" start-time="2017-07-06 15:16:22Z" end-time="2017-07-06 15:16:22Z" duration="0.796576" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 8 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 297 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=8}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_8_Should_Append_8_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 64]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1061" name="Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.IETests.Clicking_Button_9_Should_Append_9_to_the_Display" methodname="Clicking_Button_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1787662408" result="Failed" label="Error" start-time="2017-07-06 15:16:22Z" end-time="2017-07-06 15:16:23Z" duration="0.885594" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 9 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 305 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=9}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestNumber(String number) in D:\code\calculator-demo\src\test\TestBase.cs:line 188
+   at Tests.TestBase.Clicking_Button_9_Should_Append_9_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 70]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1073" name="Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.IETests.Clicking_Clear_Button_Should_Clear_Display" methodname="Clicking_Clear_Button_Should_Clear_Display" classname="Tests.TestBase" runstate="Runnable" seed="509801361" result="Failed" label="Error" start-time="2017-07-06 15:16:23Z" end-time="2017-07-06 15:16:24Z" duration="0.822865" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == clear (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 298 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=clear}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.Clicking_Clear_Button_Should_Clear_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 142]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1077" name="Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.Dividing_two_numbers_should_give_a_correct_result" methodname="Dividing_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="1334294020" result="Failed" label="Error" start-time="2017-07-06 15:16:24Z" end-time="2017-07-06 15:16:25Z" duration="0.813670" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 297 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=3}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestMath(Double leftOperand, Double rightOperand, String operator, Double expectedResult) in D:\code\calculator-demo\src\test\TestBase.cs:line 178
+   at Tests.TestBase.Dividing_two_numbers_should_give_a_correct_result() in D:\code\calculator-demo\src\test\TestBase.cs:line 173]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1076" name="Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.Multiplying_two_numbers_should_give_a_correct_result" methodname="Multiplying_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="844918190" result="Failed" label="Error" start-time="2017-07-06 15:16:25Z" end-time="2017-07-06 15:16:26Z" duration="0.831364" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 308 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=3}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestMath(Double leftOperand, Double rightOperand, String operator, Double expectedResult) in D:\code\calculator-demo\src\test\TestBase.cs:line 178
+   at Tests.TestBase.Multiplying_two_numbers_should_give_a_correct_result() in D:\code\calculator-demo\src\test\TestBase.cs:line 167]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1075" name="Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.Subtracting_two_numbers_should_give_a_correct_result" methodname="Subtracting_two_numbers_should_give_a_correct_result" classname="Tests.TestBase" runstate="Runnable" seed="253716808" result="Failed" label="Error" start-time="2017-07-06 15:16:26Z" end-time="2017-07-06 15:16:27Z" duration="0.824679" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with id == 3 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 323 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=id, value=3}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestMath(Double leftOperand, Double rightOperand, String operator, Double expectedResult) in D:\code\calculator-demo\src\test\TestBase.cs:line 178
+   at Tests.TestBase.Subtracting_two_numbers_should_give_a_correct_result() in D:\code\calculator-demo\src\test\TestBase.cs:line 161]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1072" name="Typing_0_Should_Append_0_to_the_Display" fullname="Tests.IETests.Typing_0_Should_Append_0_to_the_Display" methodname="Typing_0_Should_Append_0_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1319060214" result="Failed" label="Error" start-time="2017-07-06 15:16:27Z" end-time="2017-07-06 15:16:27Z" duration="0.812275" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 298 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_0_Should_Append_0_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 136]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1063" name="Typing_1_Should_Append_1_to_the_Display" fullname="Tests.IETests.Typing_1_Should_Append_1_to_the_Display" methodname="Typing_1_Should_Append_1_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1203483123" result="Failed" label="Error" start-time="2017-07-06 15:16:27Z" end-time="2017-07-06 15:16:28Z" duration="0.810000" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 296 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_1_Should_Append_1_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 82]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1064" name="Typing_2_Should_Append_2_to_the_Display" fullname="Tests.IETests.Typing_2_Should_Append_2_to_the_Display" methodname="Typing_2_Should_Append_2_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="767325662" result="Failed" label="Error" start-time="2017-07-06 15:16:28Z" end-time="2017-07-06 15:16:29Z" duration="0.789307" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 290 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_2_Should_Append_2_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 88]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1065" name="Typing_3_Should_Append_3_to_the_Display" fullname="Tests.IETests.Typing_3_Should_Append_3_to_the_Display" methodname="Typing_3_Should_Append_3_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="100625125" result="Failed" label="Error" start-time="2017-07-06 15:16:29Z" end-time="2017-07-06 15:16:30Z" duration="0.807477" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 301 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_3_Should_Append_3_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 94]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1066" name="Typing_4_Should_Append_4_to_the_Display" fullname="Tests.IETests.Typing_4_Should_Append_4_to_the_Display" methodname="Typing_4_Should_Append_4_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1044114416" result="Failed" label="Error" start-time="2017-07-06 15:16:30Z" end-time="2017-07-06 15:16:31Z" duration="0.836010" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 310 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_4_Should_Append_4_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 100]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1067" name="Typing_5_Should_Append_5_to_the_Display" fullname="Tests.IETests.Typing_5_Should_Append_5_to_the_Display" methodname="Typing_5_Should_Append_5_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1425608223" result="Failed" label="Error" start-time="2017-07-06 15:16:31Z" end-time="2017-07-06 15:16:31Z" duration="0.793134" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 298 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_5_Should_Append_5_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 106]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1068" name="Typing_6_Should_Append_6_to_the_Display" fullname="Tests.IETests.Typing_6_Should_Append_6_to_the_Display" methodname="Typing_6_Should_Append_6_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1321602665" result="Failed" label="Error" start-time="2017-07-06 15:16:31Z" end-time="2017-07-06 15:16:32Z" duration="0.795739" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 305 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_6_Should_Append_6_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 112]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1069" name="Typing_7_Should_Append_7_to_the_Display" fullname="Tests.IETests.Typing_7_Should_Append_7_to_the_Display" methodname="Typing_7_Should_Append_7_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="91643638" result="Failed" label="Error" start-time="2017-07-06 15:16:32Z" end-time="2017-07-06 15:16:33Z" duration="0.815173" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 291 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_7_Should_Append_7_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 118]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1070" name="Typing_8_Should_Append_8_to_the_Display" fullname="Tests.IETests.Typing_8_Should_Append_8_to_the_Display" methodname="Typing_8_Should_Append_8_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="409552484" result="Failed" label="Error" start-time="2017-07-06 15:16:33Z" end-time="2017-07-06 15:16:34Z" duration="0.805286" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 295 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_8_Should_Append_8_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 124]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1071" name="Typing_9_Should_Append_9_to_the_Display" fullname="Tests.IETests.Typing_9_Should_Append_9_to_the_Display" methodname="Typing_9_Should_Append_9_to_the_Display" classname="Tests.TestBase" runstate="Runnable" seed="1668185469" result="Failed" label="Error" start-time="2017-07-06 15:16:34Z" end-time="2017-07-06 15:16:35Z" duration="0.851906" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to find element with tag name == body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 305 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'JvB', ip: '10.5.9.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48690/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0fad80d4-a917-4308-b0dc-5c79ce74e74b
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.TestBase.TestTypedNumber(String typedKey) in D:\code\calculator-demo\src\test\TestBase.cs:line 149
+   at Tests.TestBase.Typing_9_Should_Append_9_to_the_Display() in D:\code\calculator-demo\src\test\TestBase.cs:line 130]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
